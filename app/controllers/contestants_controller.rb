@@ -52,7 +52,7 @@ class ContestantsController < ApplicationController
     @contestant = Contestant.new(params[:contestant])
     respond_to do |format|
       if @contestant.save
-        @question = Question.first
+        @question = Question.all[0]
         format.html { redirect_to @question, notice: 'Contestant was successfully created.' }
         format.json { render json: @question, status: :created, location: @question }
       else
