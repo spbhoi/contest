@@ -2,20 +2,19 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>email</th>
+    <th>password</th>
+    <th>number</th>
   </tr>
 
 <% @options.each do |option| %>
   <tr>
-    <td><%= link_to 'Show', option %></td>
-    <td><%= link_to 'Edit', edit_option_path(option) %></td>
-    <td><%= link_to 'Destroy', option, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= option.email%></td>
+    <td><%= option.password%></td>
+    <td><%= option.number%></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Option', new_option_path %>

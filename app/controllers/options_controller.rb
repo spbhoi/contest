@@ -2,7 +2,7 @@ class OptionsController < ApplicationController
   # GET /options
   # GET /options.json
   def index
-    @options = Option.all
+    @options = Contestant.all
 
     respond_to do |format|
       format.html # index.html.erb

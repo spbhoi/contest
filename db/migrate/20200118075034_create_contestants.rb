@@ -7,6 +7,5 @@ class CreateContestants < ActiveRecord::Migration
       t.string :number
       t.timestamps
     end
-    drop_table :contestants
   end
 end
