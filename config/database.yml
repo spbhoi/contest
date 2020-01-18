@@ -20,6 +20,6 @@ test:
 
 production:
   adapter: postgresql
-  database: db/production.sqlite3
+  database: HEROKU_POSTGRESQL_YELLOW
   pool: 5
   timeout: 5000
